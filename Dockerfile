@@ -13,4 +13,7 @@ ENV TURN_REALM mydomain.tld
 ADD start_coturn.sh start_coturn.sh
 ADD generate_user.sh generate_user.sh
 
+EXPOSE 3478
+EXPOSE 10000-20000
+
 CMD ["/start_coturn.sh"]
